@@ -23,7 +23,7 @@ local function get_message_callback (extra , success, result)
 	end
 	
 end
-
+ 
 local function whitelist_res (extra, success, result)
 	local user_id = result.peer_id
 	local receiver = extra.receiver
