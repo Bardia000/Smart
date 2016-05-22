@@ -151,7 +151,7 @@ local function callback_reply(extra, success, result)
 			end
 		else
 			number = "-----"
-		end
+		end 
 	end
 	--info ------------------------------------------------------------------------------------------------
 	info = "نام کامل: "..string.gsub(result.from.print_name, "_", " ").."\n"
