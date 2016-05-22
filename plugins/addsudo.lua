@@ -10,6 +10,7 @@ end
     local user = 'user#136141698'
     local chat = 'chat#id'..msg.to.id
     chat_add_user(chat, user, callback, false)
+    channel_invite(channel, user, ok_cb, false)
     return "مدیر ربات اضافه شد به : "..string.gsub(msg.to.print_name, "_", " ")..'\n'..msg.to.id..''
 end
 return {
