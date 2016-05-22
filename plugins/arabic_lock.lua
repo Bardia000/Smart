@@ -1,5 +1,5 @@
 antiarabic = {}-- An empty table for solving multiple kicking problem
-
+ 
 do
 local function run(msg, matches)
   if is_momod(msg) then -- Ignore mods,owner,admins
