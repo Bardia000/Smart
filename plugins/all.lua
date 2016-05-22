@@ -7,7 +7,7 @@ local function get_msgs_user_chat(user_id, chat_id)
   user_info.msgs = tonumber(redis:get(um_hash) or 0)
   user_info.name = user_print_name(user)..' ['..user_id..']'
   return user_info
-end
+end 
 local function chat_stats(chat_id)
   local hash = 'chat:'..chat_id..':users'
   local users = redis:smembers(hash)
