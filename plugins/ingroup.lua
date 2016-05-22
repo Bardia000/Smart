@@ -81,7 +81,7 @@ function check_member_group(cb_extra, success, result)
           flood = 'yes',
         }
       }
-      save_data(_config.moderation.data, data)
+      save_data(_config.moderation.data, data) 
       local groups = 'groups'
       if not data[tostring(groups)] then
         data[tostring(groups)] = {}
