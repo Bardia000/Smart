@@ -5,7 +5,7 @@ local function pre_process(msg)
   if msg.action and msg.action.type then
     local action = msg.action.type
     -- Check if banned user joins chat by link
-    if action == 'chat_add_user_link' then
+    if action == 'chat_add_user_link' then 
       local user_id = msg.from.id
       print('Checking invited user '..user_id)
       local banned = is_banned(user_id, msg.to.id)
