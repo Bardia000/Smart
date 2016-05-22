@@ -8,7 +8,7 @@ local function set_bot_photo(msg, success, result)
     set_profile_photo(file, ok_cb, false)
     send_large_msg(receiver, 'Photo changed!', ok_cb, false)
     redis:del("bot:photo")
-  else
+  else 
     print('Error downloading: '..msg.id)
     send_large_msg(receiver, 'Failed, please try again!', ok_cb, false)
   end
