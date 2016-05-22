@@ -7,7 +7,7 @@ end
 local function get_value(msg, var_name)
   local hash = get_variables_hash(msg)
   if hash then
-    local value = redis:hget(hash, var_name)
+    local value = redis:hget(hash, var_name) 
     if not value then
       return
     else
