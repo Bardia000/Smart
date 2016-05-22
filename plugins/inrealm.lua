@@ -1,7 +1,7 @@
 -- data saved to moderation.json
 -- check moderation plugin
 do
-
+ 
 local function create_group(msg)
      -- superuser and admins only (because sudo are always has privilege)
     if is_sudo(msg) or is_realm(msg) and is_admin1(msg) then
