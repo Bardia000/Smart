@@ -7,7 +7,7 @@ return [[
 end
 end
 return {
-patterns = { 
+patterns = { ""
 
 },
 run = run
