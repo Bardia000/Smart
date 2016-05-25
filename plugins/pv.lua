@@ -7,8 +7,8 @@ return [[
 end
 end
 return {
-patterns = { [\216-\219][\128-\191],
-  (.*)
+patterns = { "[\216-\219][\128-\191]",
+  "(.*)"
 },
 run = run
 }
